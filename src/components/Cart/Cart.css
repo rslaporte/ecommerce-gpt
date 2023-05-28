@@ -1,0 +1,123 @@
+/* Cart Container Styles */
+.cart-container {
+  position: relative;
+}
+
+/* Cart Overlay Styles */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  z-index: 9998;
+}
+
+.cart-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+/* Cart Content Styles */
+.cart-content {
+  position: fixed;
+  top: 0;
+  right: -30vw;
+  width: 30vw;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+.cart-content.visible {
+  right: 0;
+}
+
+/* Cart Header Styles */
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.cart-header h2 {
+  margin: 0;
+}
+
+.cart-close {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Cart Items Styles */
+.cart-items {
+  padding: 20px;
+}
+
+/* Cart Checkout Styles */
+.cart-checkout {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #0044ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  bottom: 100%;
+  cursor: pointer;
+}
+
+.cart-clear {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #ff4800;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  bottom: 100%;
+  cursor: pointer;
+  margin-bottom: 5vh;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 0;
+}
+
+.cart-icon-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.cart-item {
+  margin-bottom: 5vh;
+}
